@@ -1,0 +1,75 @@
+.img-container {
+    margin: 0; 
+    padding: 0;
+    position: relative;
+    overflow: hidden;   
+}
+ 
+.card-img-top {
+    transition: all 1s linear;
+}
+.img-container:hover .card-img-top {
+    transform: scale(1.2);
+} 
+
+.card {
+    border-color: transparent;
+    transform: all 1s linear; 
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+.card:hover {
+        border: 0.04rem solid rgb(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.2);       
+}
+
+
+.card-footer {
+    justify-content: space-evenly;
+    display: flex;
+    background: transparent;
+    border-top: transparent;
+    transform: all 1s linear;
+    margin: 0;
+}
+
+.card-footer:hover {
+    background:rgba(247, 247, 247);
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    background: lightblue;
+    border: none;    
+    font-size: 1.4rem;
+    border-radius: 0.5rem 0 0 0;
+    transform: translate(100%, 100%);
+    transition: all 1s linear;
+}
+.img-container:hover .cart-btn {
+    transform: translate(0, 0);
+}
+.cart-btn:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+.title {
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.cash {
+    margin-right: 0.6rem;
+    margin-bottom: 0;
+    font-style: italic;
+} 
+.euro {
+    margin-right: 1rem;
+}
+

@@ -1,0 +1,56 @@
+.detail-sec { 
+    padding: 3rem 0 3rem 0;
+}
+
+.productTitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0 3rem 0;
+    color: blue;
+
+}
+
+.Detail-container {
+    display: flex;
+}
+
+.Det-item {
+   flex: auto;
+}
+.infotext {
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+.Det-btn {
+    bottom: 50px;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    border: 2px solid rgb(22, 64, 179); 
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    transition: all 1s linear;
+}
+
+.Det-btn:hover {
+    cursor: pointer;
+    background-color: rgb(76, 76, 241);
+    color: white;
+}
+
+.Add-btn {
+    bottom: 50px;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    border: 2px solid rgb(219, 140, 43);    
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    transition: all 1s linear;
+
+}
+.Add-btn:hover {
+    cursor: pointer;
+    background-color: rgb(76, 76, 241);
+    color: white;
+}

@@ -1,0 +1,33 @@
+.Navbar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(120, 128, 243);
+  }
+  
+  Link {
+    float: left;
+  }
+  
+  .item {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .item:hover {
+    background-color: rgb(90, 84, 128);
+  }
+
+  .click{
+      background: transparent;
+      border: 0.04rem solid lightblue;
+      text-transform: capitalize;
+      font-size: 1.3rem;
+      cursor: pointer;
+  }

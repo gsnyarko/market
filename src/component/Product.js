@@ -16,11 +16,13 @@ class Product extends Component {
             <div className='card'>
                 <ProductConsumer>
                     {(value) => ( 
-                    <div className='img-container' onClick={() => value.handleDetail}>
+                    <div className='img-container' onClick={() => value.handleDetail(id)}>
                     <Link to='/details'>
                         <img src={img} alt='product' className='card-img-top'></img>
                     </Link>
-                    <button className='cart-btn' onClick={() => console.log('add to cart')}
+                    <button className='cart-btn' onClick={() => {value.addToCart(id); 
+                    value.openModal(id);}}
+                        
                         disabled={inCart ? true : false}>
                         {inCart ? (<p disabled> {''} in Cart</p>) :
                             (<img src={cart} className='' alt=''></img>)}

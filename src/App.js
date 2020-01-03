@@ -7,6 +7,7 @@ import Notfound from './component/Notfound.js';
 import Cart from './component/Cart';
 import Details from './component/Details';
 import {ProductProvider} from './component/context';
+import Modal from './component/Modal';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/cart' component={Cart} ></Route>
         <Route  component={Notfound} ></Route>    
       </Switch>
+      <Modal/>
     </div>
     </Router>
     </ProductProvider>

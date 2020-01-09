@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ProductConsumer } from './context';
 import { Link } from 'react-router-dom';
+import './Modal.css';
 
 class Modal extends Component {
     render() {
@@ -20,11 +21,19 @@ class Modal extends Component {
                                     <h2>Item Added to Cart</h2>
                                 </div>
                                 <div class="modal-body">
-                                    <p> {title} </p>
+                                    <img className='modal-img' src={img} alt='product'></img>
+                                    <h4>{title} </h4>
+                                    <h4>Price: € {price} </h4>
                                     <p>Some other text...</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
+                                    <Link to='/'>
+                                    <botton className='mbt' onClick={() => closeModal()}>Shopping</botton>
+                                    </Link>
+                                    <Link to='/cart'>
+                                    <botton className='mbt' onClick={() => closeModal()}>Go To Cart</botton>
+                                    </Link>
+
                                 </div>
                             </div>
 

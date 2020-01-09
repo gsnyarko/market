@@ -37,7 +37,7 @@ class Product extends Component {
                     
                    
                 <div className='card-footer'>
-                    <p className='title'>{title}</p>
+                    <p className='title'>{title.toUpperCase()}</p>
                     <h5 className='cash'>
                         <span className='euro'>€</span>
                         {price}</h5>

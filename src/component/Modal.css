@@ -1,35 +1,69 @@
 /* Modal Header */
 .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+  padding: 2px 16px;
+  background-color: #96afdbd7;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #96afdbd7;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.modal-img {
+    max-width: 100%;
+  height: auto;
+}
+
+.mbt {
+  text-decoration: none;
+    color: blue;
+    bottom: 50px;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    border: 2px solid rgb(219, 140, 43);    
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    transition: all 1s linear;
+
+}
+.mbt:hover {
+    cursor: pointer;
+    background-color: rgb(76, 76, 241);
     color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mbt {
+    display: grid;
   }
-  
-  /* Modal Body */
-  .modal-body {padding: 2px 16px;}
-  
-  /* Modal Footer */
-  .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-  }
-  
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-  }
+}

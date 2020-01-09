@@ -12,12 +12,17 @@
 }
 
 .Detail-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.Det-item {
-   flex: auto;
+.Det-item img {
+   
+   width: 100%;
+   height: auto;
 }
+
+
 .infotext {
     font-weight: bold;
     margin-top: 3rem;
@@ -40,19 +45,17 @@
     color: white;
 }
 
-.Add-btn {
-    color: blue;
-    bottom: 50px;
-    right: 0;
-    padding: 0.2rem 0.4rem;
-    border: 2px solid rgb(219, 140, 43);    
-    font-size: 1.4rem;
-    border-radius: 0.5rem;
-    transition: all 1s linear;
 
-}
 .Add-btn:hover {
     cursor: pointer;
     background-color: rgb(76, 76, 241);
     color: white;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .Detail-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+  }

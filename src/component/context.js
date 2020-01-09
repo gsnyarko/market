@@ -9,8 +9,12 @@ class ProductProvider extends Component {
     state ={ products: [], 
         detailProduct: detailProduct,
         cart: [],
-        modalOpen: true,
+        modalOpen: false,
         modalProduct: detailProduct,
+        cartSubTotal:0,
+        cartTax: 0,
+        cartTotal:0
+
      };
     
 componentDidMount() {
@@ -65,6 +69,20 @@ getItem =(id) => {
         this.setState(()=> {
             return {modalOpen: false}
         })
+    }
+    increment = (id) => {
+        console.log('increment')
+    }
+
+    decrement = (id) => {
+        console.log('decrememt')
+    }
+    removeItem = (id)=> {
+        console.log('removed')
+    }
+
+    clearCart = (id) => {
+        console.log('cart cleared')
     }
 
 

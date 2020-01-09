@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './component/Navbar';
 import ProductList from './component/ProductList';
 import Notfound from './component/Notfound.js';
-import Cart from './component/Cart';
+import Cart from './component/Cart/Cart';
 import Details from './component/Details';
 import {ProductProvider} from './component/context';
 import Modal from './component/Modal';

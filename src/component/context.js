@@ -81,7 +81,7 @@ getItem =(id) => {
         console.log('removed')
     }
 
-    clearCart = (id) => {
+    clearCart = () => {
         console.log('cart cleared')
     }
 
@@ -93,7 +93,12 @@ getItem =(id) => {
                 handleDetail:this.handledetail, 
                 addToCart: this.addToCart,
                 openModal: this.openModal,
-                closeModal: this.closeModal
+                closeModal: this.closeModal,
+                increment: this.increment,
+                decrement: this.decrement,
+                removeItem: this.removeItem,
+                clearCart: this.clearCart,
+
 
             }} >
                 {this.props.children}

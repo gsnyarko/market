@@ -1,6 +1,9 @@
+nav {
+  width: 100vw;
+}
 .Navbar {
   display: block;
-  width: 100%;
+  width: 100vw;
     display: flex;
     list-style-type: none;
     margin: 0;

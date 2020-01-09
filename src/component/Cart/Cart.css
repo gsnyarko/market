@@ -1,4 +1,29 @@
-.cart {
+/* .cart {
     display :grid;
     grid-template-columns: repeat(6, 1fr);
+} */
+
+.rows-container {
+    display: flex;
+}
+
+.row-item{
+    flex: 1;
+}
+.bt-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+
+button {
+    background: transparent;
+    margin-left: 0 5% 0 5%;
+    border: 2px solid black
+}
+
+button:hover {
+    background: rgb(87, 84, 84);
+    color: white;
+    cursor: pointer;
 }

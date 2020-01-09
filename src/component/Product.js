@@ -11,8 +11,6 @@ class Product extends Component {
 
         const { id, title, img, price, inCart } = this.props.product;
         return (
-            
-
             <div className='card'>
                 <ProductConsumer>
                     {(value) => ( 
@@ -26,23 +24,16 @@ class Product extends Component {
                         disabled={inCart ? true : false}>
                         {inCart ? (<p disabled> {''} in Cart</p>) :
                             (<img src={cart} className='' alt=''></img>)}
-
                     </button>
                     </div>
-
-
                     )}
-                
-                    </ProductConsumer>
-                    
+                    </ProductConsumer>               
                    
                 <div className='card-footer'>
                     <p className='title'>{title.toUpperCase()}</p>
                     <h5 className='cash'>
                         <span className='euro'>€</span>
-                        {price}</h5>
-                        
-                        
+                        {price}</h5>    
                 </div>
             </div>
            

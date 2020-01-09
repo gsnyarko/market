@@ -3,7 +3,7 @@ import Title from '../title';
 import './Cart.css';
 import EmptyCart from './EmptyCart';
 import { ProductConsumer } from '../context';
-
+import CartList from './CartList'
 
 class Cart extends Component {
     render() {
@@ -16,11 +16,12 @@ class Cart extends Component {
                             <Title name='your' title='Cart' />
                             <div className='cart'>
                                 <h4>PRODUCTS</h4>
-                                <h4>PRODUCT NAME</h4>
+                                <CartList value = {value}/>
+                                {/* <h4>PRODUCT NAME</h4>
                                 <h4>PRICE</h4>
                                 <h4>QUANTITY</h4>
                                 <h4>REMOVE</h4>
-                                <h4>TOTAL</h4>
+                                <h4>TOTAL</h4> */}
                             </div>
                         </> :
                         <EmptyCart />

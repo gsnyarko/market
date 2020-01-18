@@ -1,7 +1,7 @@
-/* .cart {
+ .cart {
     display :grid;
     grid-template-columns: repeat(6, 1fr);
-} */
+} 
 
 .rows-container {
     display: flex;
@@ -9,6 +9,7 @@
 
 .row-item{
     flex: 1;
+    margin-bottom: 3rem;
 }
 .bt-container {
     display: grid;

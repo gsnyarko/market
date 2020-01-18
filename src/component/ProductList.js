@@ -11,7 +11,7 @@ class ProductList extends Component {
             <>
             {/* <div className='plist'>
             <div className='plistcontainer'> */}
-                <Title name='our' title='product'></Title>
+                <Title name='Our' title='Product'></Title>
             <div className='plistrow'>
                  <ProductConsumer>
                     {(value)=> {

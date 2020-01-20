@@ -15,16 +15,18 @@ class Product extends Component {
                 <ProductConsumer>
                     {(value) => ( 
                     <div className='img-container' onClick={() => value.handleDetail(id)}>
+                    <div className='card-img-top'>
                     <Link to='/details'>
-                        <img src={img} alt='product' className='card-img-top'></img>
+                        <img src={img} alt='product'style={{ width: '100%', height: 'auto' }} ></img>
                     </Link>
                     <button className='cart-btn' onClick={() => {value.addToCart(id); 
                     value.openModal(id);}}
                         
                         disabled={inCart ? true : false}>
                         {inCart ? (<p disabled> {''} in Cart</p>) :
-                            (<img src={cart} className='' alt=''></img>)}
+                            (<img src={cart} className='' alt='cart'></img>)}
                     </button>
+                    </div>
                     </div>
                     )}
                     </ProductConsumer>               

@@ -15,14 +15,14 @@ class Cart extends Component {
                     return cart.length > 0 ?
                         <>
                             <Title name='Your' title='Cart' />
-                            <div className='cart'>
+                            {/* <div className='cart'>
                                 <h4>PRODUCTS</h4>
-                                <h4>PRODUCT NAME</h4>
+                                <h4>PRDCT NAME</h4>
                                 <h4>PRICE</h4>
-                                <h4>QUANTITY</h4>
+                                <h4>QTY</h4>
                                 <h4>REMOVE</h4>
                                 <h4>TOTAL</h4>
-                                </div>
+                                </div> */}
 
                                 <CartList value={value}/>
                                 <CartTotal value={value} />

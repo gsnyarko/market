@@ -15,8 +15,8 @@ class Navbar extends Component {
                <Link to='/' className='item'>
                    Products
                </Link>
-               <Link to='/cart' className='item'>
-                   <div className='click'>
+               <Link to='/cart' className='click'>
+                   <div >
                        <img src={cart} alt='cart'></img>Cart
                    </div>
                </Link>

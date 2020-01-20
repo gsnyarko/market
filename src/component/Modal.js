@@ -15,23 +15,23 @@ class Modal extends Component {
                         return null
                     } else {
                         return (
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span class="close">&times;</span>
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <span className="close">&times;</span>
                                     <h2>Item Added to Cart</h2>
                                 </div>
-                                <div class="modal-body">
+                                <div className="modal-body">
                                     <img className='modal-img' src={img} alt='product'></img>
                                     <h4>{title} </h4>
                                     <h4>Price: € {price} </h4>
-                                    <p>Some other text...</p>
+                                   
                                 </div>
-                                <div class="modal-footer">
+                                <div className="modal-footer">
                                     <Link to='/'>
-                                    <botton className='mbt' onClick={() => closeModal()}>Shopping</botton>
+                                    <button className='mbt' onClick={() => closeModal()}>Back To Shop</button>
                                     </Link>
                                     <Link to='/cart'>
-                                    <botton className='mbt' onClick={() => closeModal()}>Go To Cart</botton>
+                                    <button className='mbt' onClick={() => closeModal()}>Go To Cart</button>
                                     </Link>
 
                                 </div>

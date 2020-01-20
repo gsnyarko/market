@@ -1,7 +1,7 @@
 /* Modal Header */
 .modal-header {
   padding: 2px 16px;
-  background-color: #96afdbd7;
+  background-color: #61cd8e8e;
   color: white;
 }
 
@@ -11,8 +11,8 @@
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #96afdbd7;
-  color: white;
+  background-color: #61cd8e8e;
+  
 }
 
 /* Modal Content */
@@ -63,7 +63,7 @@
 
 
 @media only screen and (max-width: 600px) {
-  .mbt {
-    display: grid;
-  }
+  /* .mbt {
+    display: flex;
+  } */
 }

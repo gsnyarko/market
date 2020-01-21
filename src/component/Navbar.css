@@ -3,6 +3,8 @@ nav {
 }
 
 .Navbar {
+  justify-content: space-around;
+  display: block;
   width: 100vw;
     display: flex;
     list-style-type: none;
@@ -11,6 +13,7 @@ nav {
     overflow: hidden;
     background-color: rgba(59, 64, 87, 0.824);
   }
+
   
   /* Link {
     float: left;
@@ -24,6 +27,19 @@ nav {
     color:white;
     text-decoration: none;
   }
+  .Home {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search {
+    display: flex;
+    padding: 6px;
+  border: none;
+  margin: 8px 0 8px 0;
+  margin-right: 16px;
+  font-size: 17px;
+  }
   
   /* Change the link color to #111 (black) on hover */
   .item:hover {
@@ -31,7 +47,8 @@ nav {
   }
 
   .click {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-evenly;
       background: transparent;
       font-size: 1.3rem;
       cursor: pointer;
